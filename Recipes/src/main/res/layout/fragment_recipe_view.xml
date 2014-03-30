@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:fillViewport="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:layout_margin="0dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_tab_selected_pressed_holo"
+                android:paddingBottom="10dp"
+                android:padding="10dp">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/txtKonkaniName"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:padding="0dp"
+                    android:textColor="#690013"
+                    android:textSize="32sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="English Name"
+                    android:id="@+id/txtName"
+                    android:padding="0dp"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPreperationTime"
+                    android:text="Preperation Time"
+                    android:layout_weight="0.45"
+                    android:padding="0dp"
+                    android:textAlignment="gravity"
+                    android:gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtContributors"
+                    android:padding="8dp"
+                    android:layout_gravity="left"
+                    android:minWidth="50dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Contributor"/>
+
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnLike"
+                    android:text="Like"
+                    android:layout_gravity="right"
+                    android:padding="0dp"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:textColor="#19852b"
+                    android:background="#ffffff"/>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:text="Ingredients"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:background="@drawable/abc_ab_bottom_solid_light_holo"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:id="@+id/layoutIngredients"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:text="Directions"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:background="@drawable/abc_ab_bottom_solid_light_holo"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:id="@+id/layoutDirections"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
